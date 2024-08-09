@@ -73,6 +73,7 @@ top: 50%;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+
   
 }
 
@@ -136,6 +137,66 @@ z-index: 99;
   border-radius: 78%;
   
 }
+
+.col-lg-6 ul{
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+#portofolios {
+  padding: 6rem 0;
+}
+
+.portfolio {
+  border-radius: 0.7rem;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+}
+
+.portfolio-cover {
+  height: 250px;
+}
+
+.portfolio-cover img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 2rem 1.5rem;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.portfolio-title a svg:hover {
+  fill: ;
+}
+
+.portfolio-tags {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.portfolio-tags div {
+  font-size: .9rem;
+  border: 1px solid #f1f1f1;
+  padding: .4rem 1rem;
+  color: #656d72;
+}
+
+
+.portfolio h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
 
 .skills {
   padding: 6rem 0;
