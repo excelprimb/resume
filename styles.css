@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --black-1: #202020;
+  --black-2: #323232;
+  --tosca-accent: #00c6ba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--black-1);
+}
+
+/* Typography */
+
+.text-13,
+.text-16,
+.text-24,
+.text-32 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.text-13 {
+  font-size: 13px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+
+.regular {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.t-primary {
+  color: var(--tosca-accent);
+}
+
+.t-white {
+  color: #ffffff;;
+}
+
+.t-black-1 {
+  color: var(--black-1);
+}
+
+.t-black-2 {
+  color: var(--black-2);
+}
+
+.t-warning {
+  color: rgb(255, 217, 0);
+}
+
+.t-center {
+  text-align: center;
+}
+
+/* spacing */
+.mt-1 {
+  margin-top: 0.25em;
+}
+
+.mt-2 {
+  margin-top: 0.5em;
+}
+
+.py-3 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.py-4 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.p-3 {
+  padding: 3em;
+}
+
+/* Content */
+.container {
+  max-width: 1368px;
+  margin: auto;
+}
+
+
+
+.header {
+  margin: 0;
+  position: fixed;
+  top: 0;  
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  width: 100%;
+  list-style: none;  
+  height: 5em;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-item {
+  width: calc(100%/3);
+  background-color: var(--black-2);
+}
+
+.nav-item:nth-of-type(1) {
+  border-bottom-left-radius: 3em;
+}
+
+.nav-item:nth-of-type(4) {
+  border-bottom-right-radius: 3em;
+}
+
+.nav-item,
+.nav-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-item a {
+  text-decoration: none;
+  margin: auto;
+  padding: 0 1em;
+  color: white;
+}
+
+.visited {
+  background-color: rgb(110, 110, 110);;
+  transition: all ease-in-out .4s;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 5em;
+}
+
+.img-tr {
+  background-image: linear-gradient(142deg, rgba(32,32,32,1) 0%, rgba(0,0,0,0.9108237044817927) 22%, rgba(0,198,186,0.7931766456582633) 100%);
+  background-image: url('./assets/img/s1.webp');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 200px;
+  top: -180px;
+  right: -60px;
+}
+
+.intro {
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-l,
+.intro-r {
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+}
+
+.intro-l {
+  display: none;
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(-40px 26px 1px rgba(12, 178, 178, 1));
+}
+
+.intro-l object {
+  width: calc(100% - 40px);
+  height: 500px;
+  margin-left: auto;
+}
+
+.intro-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-r h1 {
+  margin: 0;
+  text-align: center;
+}
+
+article {
+  text-align: center;
+}
+
+article p {
+  letter-spacing: 0.1em;
+  max-width: 700px;
+  margin: 32px auto;
+}
+
+.img-abs {
+  position: fixed;
+  z-index: 100;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.col {
+  flex-direction: column;
+}
+
+@media (min-width: 1368px) {
+  .intro-r h1 {
+    margin: 0;
+    text-align: left;
+  }
+
+  article {
+    text-align: left;
+  }
+
+  .intro-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-l,
+  .intro-r {
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 56px;
+  }
+}
